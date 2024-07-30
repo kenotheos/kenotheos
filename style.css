@@ -1,0 +1,75 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    color: #e0e0e0;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+
+    height: 100vh;
+}
+
+#txt2{
+    color: #7e21c0;
+    font-size: 25px;
+}
+
+#donations{
+    padding: 7px;
+}
+
+#email{
+    padding: 7px;
+}
+
+#mmm {
+    font-size: 30px;
+    color: #7e21c0;
+}
+
+.container {
+    text-align: center;
+    margin-top: 25px; 
+}
+
+.name-container {
+    margin-bottom: 21px;
+    
+}
+
+.name-text {
+    font-size: 2em;
+    font-weight: bold;
+    color:  #5B148F ;
+}
+
+.profile-image {
+    border-radius: 60%;
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.list2{
+    color: #ffffff;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 20px 0;
+}
+
+a {
+    color: #ffffff; /* Bright green for high contrast */
+    text-decoration: none;
+    font-size: 17px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
