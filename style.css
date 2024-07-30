@@ -6,7 +6,7 @@ body {
 }
 #txt2{
     color: #7e21c0;
-    font-size: 17px;
+    font-size: 25px;
 }
 #donations{
     padding: 4px;
@@ -15,17 +15,18 @@ body {
     padding: 4px;
 }
 #mmm {
-    font-size: 22px;
+    font-size: 25px;
     color: #7e21c0;
 }
 .container {
     text-align: center;
-    margin-top: 17px; 
+    margin-top: 20px; 
 }
 .name-container {
-    margin-bottom: 17px;
+    margin-bottom: 20px;
 }
 .name-text {
+    font-size: 25px;
     font-weight: bold;
     color:  #5B148F ;
 }
@@ -43,13 +44,16 @@ ul {
     padding: 0;
 }
 ul li {
-    margin: 12px;
+    margin: 17px;
 }
 a {
     color: #ffffff; 
     text-decoration: none;
-    font-size: 12px;
+    font-size: 17px;
 }
 a:hover {
     text-decoration: underline;
+}
+.txt3{
+    font-size: 13px;
 }
