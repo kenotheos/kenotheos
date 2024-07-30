@@ -6,32 +6,31 @@ body {
 }
 #txt2{
     color: #7e21c0;
-    font-size: 20px;
+    font-size: 17px;
 }
 #donations{
-    padding: 5px;
+    padding: 4px;
 }
 #email{
-    padding: 5px;
+    padding: 4px;
 }
 #mmm {
-    font-size: 25px;
+    font-size: 22px;
     color: #7e21c0;
 }
 .container {
     text-align: center;
-    margin-top: 20px; 
+    margin-top: 17px; 
 }
 .name-container {
-    margin-bottom: 20px;
+    margin-bottom: 17px;
 }
 .name-text {
-    font-size: 2em;
     font-weight: bold;
     color:  #5B148F ;
 }
 .profile-image {
-    border-radius: 60%;
+    border-radius: 50%;
     max-width: 150px;
     height: auto;
     margin-bottom: 10px;
@@ -44,12 +43,12 @@ ul {
     padding: 0;
 }
 ul li {
-    margin: 15px 0;
+    margin: 12px;
 }
 a {
     color: #ffffff; 
     text-decoration: none;
-    font-size: 15px;
+    font-size: 12px;
 }
 a:hover {
     text-decoration: underline;
