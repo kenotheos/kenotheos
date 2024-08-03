@@ -9,10 +9,11 @@ body {
     font-size: 25px;
 }
 #donations{
-    padding: 4px;
+    padding: 5px;
 }
 #email{
-    padding: 4px;
+    padding: 5px;
+    color: red;
 }
 #mmm {
     font-size: 25px;
