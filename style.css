@@ -34,7 +34,7 @@ body {
 .profile-image {
     border-radius: 50%;
     max-width: 150px;
-    height: auto;
+    height: 150px;
     margin-bottom: 10px;
 }
 .list2{
