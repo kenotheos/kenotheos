@@ -1,35 +1,44 @@
+@import url('https://fonts.cdnfonts.com/css/perfect-dos-vga-437');
 body {
-    font-family: 'Courier New', Courier, monospace;
-    color: #e0e0e0;
-    background-color: #000000;
+    font-family: 'Perfect DOS VGA 437', sans-serif;
+    color: #cccccc;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    letter-spacing: 2px;
+    min-height: 100vh;
 }
-#txt2{
-    color: #7e21c0;
-    font-size: 25px;
-}
-#donations{
-    padding: 5px;
-}
-#email{
-    padding: 5px;
-    color: red;
-}
-#mmm {
-    font-size: 25px;
-    color: #7e21c0;
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); 
+    pointer-events: none; 
+    z-index: -1; 
 }
 .container {
     text-align: center;
-    margin-top: 20px; 
+    background: rgba(0, 0, 0, 0.9);
+    width: auto;
+    max-width: 600px;
+    padding: 20px;
+    margin: 0 20px;
+    border-radius: 10px;
 }
 .name-container {
     margin-bottom: 20px;
 }
 .name-text {
-    font-size: 25px;
+    font-size: 30px;
     font-weight: bold;
-    color:  #5B148F ;
+    color: #a332f3;
 }
 .profile-image {
     border-radius: 50%;
@@ -37,24 +46,79 @@ body {
     height: 150px;
     margin-bottom: 10px;
 }
-.list2{
-    color: #ffffff;
+.divider {
+    color: #7e21c0;
+    font-size: 25px;
+    text-align: center;
+}
+.section-title {
+    font-size: 25px;
+    color: #7e21c0;
 }
 ul {
     list-style: none;
     padding: 0;
+    text-align: center;
 }
 ul li {
     margin: 17px;
 }
 a {
-    color: #ffffff; 
+    color: #ffffff;
     text-decoration: none;
     font-size: 17px;
 }
 a:hover {
     text-decoration: underline;
 }
-.txt3{
-    font-size: 13px;
+.email {
+    color: red;
+    padding: 5px;
+    text-align: center;
+}
+.useful-container {
+    margin-top: 40px;
+}
+#datetime, #weather {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    font-size: 14px;
+    color: #aaaaaa;
+    font-family: 'Perfect DOS VGA 437', sans-serif;
+}
+#weather {
+    bottom: 35px;
+}
+#datetime {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    font-size: 14px;
+    color: #aaaaaa;
+    font-family: 'Perfect DOS VGA 437', sans-serif;
+}
+#weather {
+    position: fixed;
+    bottom: 30px;
+    left: 10px;
+    font-size: 14px;
+    color: #aaaaaa;
+    font-family: 'Perfect DOS VGA 437', sans-serif;
+}
+.crypto-donation {
+    margin-top: 30px;
+    color: #cccccc;
+}
+
+.crypto-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.crypto-list li {
+    margin: 10px 0;
+    font-size: 16px;
+    word-break: break-word;
 }
