@@ -1,53 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>thnk u :3</title>
-    <link rel="icon" href="icons/favicon.gif" type="image/gif">
-    <link href="https://fonts.cdnfonts.com/css/perfect-dos-vga-437" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>thnk u :3</title>
+  <link rel="icon" href="icons/favicon.gif" type="image/gif" />
+  <link href="https://fonts.cdnfonts.com/css/perfect-dos-vga-437" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Perfect DOS VGA 437', sans-serif;
+      color: #cccccc;
+      background-color: black;
+      margin: 0;
+      padding: 20px;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: rgba(0, 0, 0, 0.9);
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+    }
+    .name-text {
+      font-size: 30px;
+      font-weight: bold;
+      color: #a332f3;
+    }
+    .divider {
+      color: #7e21c0;
+      font-size: 20px;
+      margin: 20px 0;
+    }
+    .crypto-donation {
+      text-align: left;
+      margin-top: 20px;
+    }
+    .section-title {
+      color: #7e21c0;
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+    .crypto-block {
+      margin-bottom: 20px;
+    }
+    .crypto-label {
+      font-weight: bold;
+      color: #ffffff;
+      margin-bottom: 5px;
+    }
+    .address-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .crypto-address {
+      font-family: monospace;
+      flex-grow: 1;
+      word-break: break-all;
+      margin-right: 10px;
+      color: #cccccc;
+    }
+    .copy-button {
+      background-color: #7e21c0;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+      font-family: 'Perfect DOS VGA 437', sans-serif;
+      border-radius: 5px;
+      margin-top: 5px;
+    }
+    .copy-button:hover {
+      background-color: #a332f3;
+    }
+    .back-link {
+      margin-top: 30px;
+    }
+    #datetime, #weather {
+      font-size: 14px;
+      color: #aaaaaa;
+      position: fixed;
+      left: 10px;
+      font-family: 'Perfect DOS VGA 437', sans-serif;
+    }
+    #weather {
+      bottom: 35px;
+    }
+    #datetime {
+      bottom: 10px;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <div class="name-container">
-            <div class="name-text" data-text="Thank You.">thank u :3</div>
+  <div class="container">
+    <div class="name-text">thank u :3</div>
+    <p>thnk u :3 ! whether you donated or just thought about it,
+    <p class="divider">^ . ^ . ^ . ^ . ^ . ^ . ^ . ^ . ^ . ^ . ^ . ^ . ^ . ^ . ^ . ^ . ^ . ^</p>
+    <div class="crypto-donation">
+      <p class="section-title">crypto addresses:</p>
+      <div class="crypto-block">
+        <div class="crypto-label">Bitcoin (BTC):</div>
+        <div class="address-row">
+          <div class="crypto-address" id="btc">bc1p5ev9m0vjxwazyghwz9gl8t9afn7ddxz4zcr0c89pnfv6n5s9cdvsu8rqer</div>
         </div>
-        <p class="thank-you-text">thnk u :3 !</p>
-        <p class="divider">^  .  ^  .  ^  .  ^  .  ^  .  ^</p>
-        <div class="crypto-donation">
-            <p class="section-title">crypto addresses:</p>
-            <div class="crypto-entry">
-                <span class="crypto-label">BTC:</span>
-                <span class="crypto-address" id="btc">bc1p5ev9m0vjxwazyghwz9gl8t9afn7ddxz4zcr0c89pnfv6n5s9cdvsu8rqer</span>
-                <button class="copy-button" onclick="copyToClipboard('btc')">Copy</button>
-            </div>
-            <div class="crypto-entry">
-                <span class="crypto-label">ETH:</span>
-                <span class="crypto-address" id="eth">0xdD05c94d4AeE83222Bb4d84112532CfCffAF2A89</span>
-                <button class="copy-button" onclick="copyToClipboard('eth')">Copy</button>
-            </div>
-            <div class="crypto-entry">
-                <span class="crypto-label">LTC:</span>
-                <span class="crypto-address" id="ltc">ltc1qgxj3ewt6f6nvhkqgrlm63uufxp00km7psnlsvx</span>
-                <button class="copy-button" onclick="copyToClipboard('ltc')">Copy</button>
-            </div>
-            <div class="crypto-entry">
-                <span class="crypto-label">XMR:</span>
-                <span class="crypto-address" id="xmr">49sMAjXZyExS14BN5cr1bFArw8oC93AmUM7h3xEvM9y6fkrU9Qf1YewoxqsJtaLxybdNAvEbv7HUNo9k65u1FEq8J9eSZ5A</span>
-                <button class="copy-button" onclick="copyToClipboard('xmr')">Copy</button>
-            </div>
-            <div class="crypto-entry">
-                <span class="crypto-label">SOL:</span>
-                <span class="crypto-address" id="sol">7tx8yt9n2sZG9bdYjP9oHi3EKRBDfuwYBgcPvffFx5sq</span>
-                <button class="copy-button" onclick="copyToClipboard('sol')">Copy</button>
-            </div>
+        <button class="copy-button" onclick="copyToClipboard('btc')">Copy</button>
+      </div>
+      <div class="crypto-block">
+        <div class="crypto-label">Ethereum (ETH):</div>
+        <div class="address-row">
+          <div class="crypto-address" id="eth">0xdD05c94d4AeE83222Bb4d84112532CfCffAF2A89</div>
         </div>
-        <div class="back-link">
-            <a href="index.html">← return home</a>
+        <button class="copy-button" onclick="copyToClipboard('eth')">Copy</button>
+      </div>
+      <div class="crypto-block">
+        <div class="crypto-label">Litecoin (LTC):</div>
+        <div class="address-row">
+          <div class="crypto-address" id="ltc">ltc1qgxj3ewt6f6nvhkqgrlm63uufxp00km7psnlsvx</div>
         </div>
+        <button class="copy-button" onclick="copyToClipboard('ltc')">Copy</button>
+      </div>
+      <div class="crypto-block">
+        <div class="crypto-label">Monero (XMR):</div>
+        <div class="address-row">
+          <div class="crypto-address" id="xmr">49sMAjXZyExS14BN5cr1bFArw8oC93AmUM7h3xEvM9y6fkrU9Qf1YewoxqsJtaLxybdNAvEbv7HUNo9k65u1FEq8J9eSZ5A</div>
+        </div>
+        <button class="copy-button" onclick="copyToClipboard('xmr')">Copy</button>
+      </div>
+      <div class="crypto-block">
+        <div class="crypto-label">Solana (SOL):</div>
+        <div class="address-row">
+          <div class="crypto-address" id="sol">7tx8yt9n2sZG9bdYjP9oHi3EKRBDfuwYBgcPvffFx5sq</div>
+        </div>
+        <button class="copy-button" onclick="copyToClipboard('sol')">Copy</button>
+      </div>
     </div>
-    <div id="datetime"></div>
-    <div id="weather"></div>
+    <div class="back-link">
+      <a href="index.html">← return home</a>
+    </div>
+  </div>
+  <div id="weather"></div>
+  <div id="datetime"></div>
+  <script>
+    function copyToClipboard(id) {
+      const text = document.getElementById(id).textContent;
+      navigator.clipboard.writeText(text).then(() => {
+        alert("Copied: " + text);
+      }).catch(err => {
+        console.error('Clipboard copy failed:', err);
+      });
+    }
+    function updateDateTime() {
+      const now = new Date();
+      const formatted = now.toLocaleString('en-US', {
+        weekday: 'short',
+        year: 'numeric',
+        month: 'short',
+        day: 'numeric',
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit',
+        hour12: false
+      });
+      document.getElementById('datetime').textContent = formatted;
+    }
+    async function fetchWeather() {
+      try {
+        const loc = await fetch('https://ipapi.co/json/').then(r => r.json());
+        const city = loc.city;
+        const country = loc.country;
+        const weather = await fetch(`https://wttr.in/${city}?format=%t+%C`);
+        const weatherText = await weather.text();
+        document.getElementById('weather').textContent = `${city}, ${country} - ${weatherText}`;
+      } catch (err) {
+        console.error('Weather error:', err);
+        document.getElementById('weather').textContent = "Weather info unavailable";
+      }
+    }
+    setInterval(updateDateTime, 1000);
+    updateDateTime();
+    fetchWeather();
+  </script>
 </body>
 </html>
