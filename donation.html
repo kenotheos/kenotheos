@@ -13,23 +13,35 @@
         <div class="name-container">
             <div class="name-text" data-text="Thank You.">thank u :3</div>
         </div>
-        <p class="thank-you-text">
-            if u donated, or even just thought about it,<br>
-            thank u frr i mean it :3.<br><br>
-            ur support helps me pursue a better life,<br>
-            nd keep doin cool stuff in the internet.<br><br>
-            ur making a real difference on smones life, thnk u ^ ^
-        </p>
+        <p class="thank-you-text">thnk u :3 !</p>
         <p class="divider">^  .  ^  .  ^  .  ^  .  ^  .  ^</p>
         <div class="crypto-donation">
             <p class="section-title">crypto addresses:</p>
-            <ul class="crypto-list">
-                <li><strong>Bitcoin (BTC):</strong> bc1p5ev9m0vjxwazyghwz9gl8t9afn7ddxz4zcr0c89pnfv6n5s9cdvsu8rqer</li>
-                <li><strong>Ethereum (ETH):</strong> 0xdD05c94d4AeE83222Bb4d84112532CfCffAF2A89</li>
-                <li><strong>Litecoin (LTC):</strong> ltc1qgxj3ewt6f6nvhkqgrlm63uufxp00km7psnlsvx</li>
-                <li><strong>Monero (XMR):</strong> 49sMAjXZyExS14BN5cr1bFArw8oC93AmUM7h3xEvM9y6fkrU9Qf1YewoxqsJtaLxybdNAvEbv7HUNo9k65u1FEq8J9eSZ5A</li>
-                <li><strong>Solana (SOL):</strong> 7tx8yt9n2sZG9bdYjP9oHi3EKRBDfuwYBgcPvffFx5sq</li>
-            </ul>
+            <div class="crypto-entry">
+                <span class="crypto-label">BTC:</span>
+                <span class="crypto-address" id="btc">bc1p5ev9m0vjxwazyghwz9gl8t9afn7ddxz4zcr0c89pnfv6n5s9cdvsu8rqer</span>
+                <button class="copy-button" onclick="copyToClipboard('btc')">Copy</button>
+            </div>
+            <div class="crypto-entry">
+                <span class="crypto-label">ETH:</span>
+                <span class="crypto-address" id="eth">0xdD05c94d4AeE83222Bb4d84112532CfCffAF2A89</span>
+                <button class="copy-button" onclick="copyToClipboard('eth')">Copy</button>
+            </div>
+            <div class="crypto-entry">
+                <span class="crypto-label">LTC:</span>
+                <span class="crypto-address" id="ltc">ltc1qgxj3ewt6f6nvhkqgrlm63uufxp00km7psnlsvx</span>
+                <button class="copy-button" onclick="copyToClipboard('ltc')">Copy</button>
+            </div>
+            <div class="crypto-entry">
+                <span class="crypto-label">XMR:</span>
+                <span class="crypto-address" id="xmr">49sMAjXZyExS14BN5cr1bFArw8oC93AmUM7h3xEvM9y6fkrU9Qf1YewoxqsJtaLxybdNAvEbv7HUNo9k65u1FEq8J9eSZ5A</span>
+                <button class="copy-button" onclick="copyToClipboard('xmr')">Copy</button>
+            </div>
+            <div class="crypto-entry">
+                <span class="crypto-label">SOL:</span>
+                <span class="crypto-address" id="sol">7tx8yt9n2sZG9bdYjP9oHi3EKRBDfuwYBgcPvffFx5sq</span>
+                <button class="copy-button" onclick="copyToClipboard('sol')">Copy</button>
+            </div>
         </div>
         <div class="back-link">
             <a href="index.html">← return home</a>
@@ -37,6 +49,5 @@
     </div>
     <div id="datetime"></div>
     <div id="weather"></div>
-    <script src="donation.js"></script>
 </body>
 </html>

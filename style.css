@@ -110,15 +110,43 @@ a:hover {
     margin-top: 30px;
     color: #cccccc;
 }
-
 .crypto-list {
     list-style: none;
     padding: 0;
     margin-top: 15px;
 }
-
 .crypto-list li {
     margin: 10px 0;
     font-size: 16px;
     word-break: break-word;
+}
+.crypto-entry {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+.crypto-label {
+    font-weight: bold;
+    margin-right: 10px;
+    flex: 0 0 auto;
+}
+.crypto-address {
+    font-family: monospace;
+    word-break: break-all;
+    margin-right: 10px;
+    flex: 1 1 auto;
+}
+.copy-button {
+    background-color: #7e21c0;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-family: 'Perfect DOS VGA 437', sans-serif;
+    border-radius: 5px;
+}
+.copy-button:hover {
+    background-color: #a332f3;
 }

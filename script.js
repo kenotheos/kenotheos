@@ -69,3 +69,11 @@ function initialize() {
     setInterval(updateDateTime, 1000);
 }
 window.onload = initialize;
+function copyToClipboard(id) {
+    const text = document.getElementById(id).textContent;
+    navigator.clipboard.writeText(text).then(() => {
+        alert("Copied: " + text);
+    }).catch(err => {
+        console.error('Error copying text:', err);
+    });
+}
