@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>thnk u :3</title>
+  <title>thank u :3</title>
   <link rel="icon" href="icons/favicon.gif" type="image/gif" />
   <link href="https://fonts.cdnfonts.com/css/perfect-dos-vga-437" rel="stylesheet" />
   <style>
@@ -58,7 +58,7 @@
     .crypto-address {
       font-family: monospace;
       flex-grow: 1;
-      word-break: break-all;
+      word-break: break-word;
       margin-right: 10px;
       color: #cccccc;
     }
@@ -96,52 +96,91 @@
 <body>
   <div class="container">
     <div class="name-text">thank u :3</div>
-    <p>thnk u :3 ! whether you donated or just thought about it,
+    <p>thank you! whether you donated or just thought about it, it means a lot :3</p>
     <p class="divider">^ . ^ . ^ . ^ . ^ . ^ . ^ . ^ . ^ . ^ . ^ . ^ . ^ . ^ . ^ . ^ . ^ . ^</p>
     <div class="crypto-donation">
       <p class="section-title">crypto addresses:</p>
+
       <div class="crypto-block">
         <div class="crypto-label">Bitcoin (BTC):</div>
         <div class="address-row">
-          <div class="crypto-address" id="btc">bc1p5ev9m0vjxwazyghwz9gl8t9afn7ddxz4zcr0c89pnfv6n5s9cdvsu8rqer</div>
+          <div class="crypto-address" id="btc">bc1q7hqkdcgdfw2mgy6lmg3xq34am5jmf96nf8an2a</div>
         </div>
         <button class="copy-button" onclick="copyToClipboard('btc')">Copy</button>
       </div>
+
       <div class="crypto-block">
         <div class="crypto-label">Ethereum (ETH):</div>
         <div class="address-row">
-          <div class="crypto-address" id="eth">0xdD05c94d4AeE83222Bb4d84112532CfCffAF2A89</div>
+          <div class="crypto-address" id="eth">0x9BbadC6CB64abFCD2e594E0336928E488b17F099</div>
         </div>
         <button class="copy-button" onclick="copyToClipboard('eth')">Copy</button>
       </div>
+
       <div class="crypto-block">
         <div class="crypto-label">Litecoin (LTC):</div>
         <div class="address-row">
-          <div class="crypto-address" id="ltc">ltc1qgxj3ewt6f6nvhkqgrlm63uufxp00km7psnlsvx</div>
+          <div class="crypto-address" id="ltc">ltc1qp9hue539ke49j0ff75n3np4kph8x2umyumpfme</div>
         </div>
         <button class="copy-button" onclick="copyToClipboard('ltc')">Copy</button>
       </div>
+
       <div class="crypto-block">
-        <div class="crypto-label">Monero (XMR):</div>
+        <div class="crypto-label">XRP:</div>
         <div class="address-row">
-          <div class="crypto-address" id="xmr">49sMAjXZyExS14BN5cr1bFArw8oC93AmUM7h3xEvM9y6fkrU9Qf1YewoxqsJtaLxybdNAvEbv7HUNo9k65u1FEq8J9eSZ5A</div>
+          <div class="crypto-address" id="xrp">rHmxw6ZmrYEsm6NbU6XdMAYhW1LvY3FdAQ</div>
         </div>
-        <button class="copy-button" onclick="copyToClipboard('xmr')">Copy</button>
+        <button class="copy-button" onclick="copyToClipboard('xrp')">Copy</button>
       </div>
+
       <div class="crypto-block">
         <div class="crypto-label">Solana (SOL):</div>
         <div class="address-row">
-          <div class="crypto-address" id="sol">7tx8yt9n2sZG9bdYjP9oHi3EKRBDfuwYBgcPvffFx5sq</div>
+          <div class="crypto-address" id="sol">8fF65bRfx6My6JTVc3ZQ2JGkACyWuYxokXKevhipEUYN</div>
         </div>
         <button class="copy-button" onclick="copyToClipboard('sol')">Copy</button>
       </div>
+
+      <div class="crypto-block">
+        <div class="crypto-label">BNB Smart Chain:</div>
+        <div class="address-row">
+          <div class="crypto-address" id="bnb">0x9BbadC6CB64abFCD2e594E0336928E488b17F099</div>
+        </div>
+        <button class="copy-button" onclick="copyToClipboard('bnb')">Copy</button>
+      </div>
+
+      <div class="crypto-block">
+        <div class="crypto-label">USDT (BEP20):</div>
+        <div class="address-row">
+          <div class="crypto-address" id="usdt-bep">0x9BbadC6CB64abFCD2e594E0336928E488b17F099</div>
+        </div>
+        <button class="copy-button" onclick="copyToClipboard('usdt-bep')">Copy</button>
+      </div>
+
+      <div class="crypto-block">
+        <div class="crypto-label">USDT (TRC20):</div>
+        <div class="address-row">
+          <div class="crypto-address" id="usdt-trc">TQaQQpH9mYFHAUwyQn5osuJBbgzmmWWCwk</div>
+        </div>
+        <button class="copy-button" onclick="copyToClipboard('usdt-trc')">Copy</button>
+      </div>
+
+      <div class="crypto-block">
+        <div class="crypto-label">Tron (TRX):</div>
+        <div class="address-row">
+          <div class="crypto-address" id="trx">TQaQQpH9mYFHAUwyQn5osuJBbgzmmWWCwk</div>
+        </div>
+        <button class="copy-button" onclick="copyToClipboard('trx')">Copy</button>
+      </div>
     </div>
     <div class="back-link">
-      <a href="index.html">← return home</a>
+      <a href="index.html">&larr; return home</a>
     </div>
   </div>
+
   <div id="weather"></div>
   <div id="datetime"></div>
+
   <script>
     function copyToClipboard(id) {
       const text = document.getElementById(id).textContent;
@@ -151,6 +190,7 @@
         console.error('Clipboard copy failed:', err);
       });
     }
+
     function updateDateTime() {
       const now = new Date();
       const formatted = now.toLocaleString('en-US', {
@@ -165,6 +205,7 @@
       });
       document.getElementById('datetime').textContent = formatted;
     }
+
     async function fetchWeather() {
       try {
         const loc = await fetch('https://ipapi.co/json/').then(r => r.json());
@@ -178,6 +219,7 @@
         document.getElementById('weather').textContent = "Weather info unavailable";
       }
     }
+
     setInterval(updateDateTime, 1000);
     updateDateTime();
     fetchWeather();
