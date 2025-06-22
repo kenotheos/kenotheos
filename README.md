@@ -4,7 +4,7 @@ built this website as my own linktree, it contains a list of my links, also a li
 
 ### [click here to get my links :3](https://k3n0theos.pages.dev/)
 
-## 🛠️ Tech Stack
+##  tech stack
 
 i intentionally built the website with a focus on simplicity and performance, using only fundamental web tools like :
 
@@ -12,7 +12,7 @@ i intentionally built the website with a focus on simplicity and performance, us
 * **CSS3:** 
 * **JavaScript:**
 
-## 🚀 Setup and Deployment
+## setup and deployment
 
 this is a static website with no build steps or dependencies.
 
