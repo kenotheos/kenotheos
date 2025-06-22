@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>donations - kenotheos</title>
+    <link rel="icon" href="icons/favicon.gif" type="image/gif" />
+    <link href="https://fonts.cdnfonts.com/css/perfect-dos-vga-437" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="donation-page">
+    <div class="scanline-overlay"></div>
+    <main class="container">
+        <h1 class="name-header">donations</h1>
+        <p class="bio">
+            ur support is deeply appreciated and helps me continue creating beautiful things :3, <br>thank u for considering !
+        </p>
+        <div class="donation-list">
+            <div class="donation-item">
+                <span class="crypto-name">bitcoin (btc)</span>
+                <div class="address-box">
+                    <span id="btc-addr" class="crypto-address">bc1q7hqkdcgdfw2mgy6lmg3xq34am5jmf96nf8an2a</span>
+                    <button class="copy-button" onclick="copyToClipboard('btc-addr', this)">copy</button>
+                </div>
+            </div>
+            <div class="donation-item">
+                <span class="crypto-name">ethereum / bnb (bep20)</span>
+                <div class="address-box">
+                    <span id="eth-addr" class="crypto-address">0x9BbadC6CB64abFCD2e594E0336928E488b17F099</span>
+                    <button class="copy-button" onclick="copyToClipboard('eth-addr', this)">copy</button>
+                </div>
+            </div>
+            <div class="donation-item">
+                <span class="crypto-name">litecoin (ltc)</span>
+                <div class="address-box">
+                    <span id="ltc-addr" class="crypto-address">ltc1qp9hue539ke49j0ff75n3np4kph8x2umyumpfme</span>
+                    <button class="copy-button" onclick="copyToClipboard('ltc-addr', this)">copy</button>
+                </div>
+            </div>
+            <div class="donation-item">
+                <span class="crypto-name">solana (sol)</span>
+                <div class="address-box">
+                    <span id="sol-addr" class="crypto-address">8fF65bRfx6My6JTVc3ZQ2JGkACyWuYxokXKevhipEUYN</span>
+                    <button class="copy-button" onclick="copyToClipboard('sol-addr', this)">copy</button>
+                </div>
+            </div>
+            <div class="donation-item">
+                <span class="crypto-name">xrp</span>
+                <div class="address-box">
+                    <span id="xrp-addr" class="crypto-address">rHmxw6ZmrYEsm6NbU6XdMAYhW1LvY3FdAQ</span>
+                    <button class="copy-button" onclick="copyToClipboard('xrp-addr', this)">copy</button>
+                </div>
+            </div>
+            <div class="donation-item">
+                <span class="crypto-name">usdt (trc20)</span>
+                <div class="address-box">
+                    <span id="trx-addr" class="crypto-address">TQaQQpH9mYFHAUwyQn5osuJBbgzmmWWCwk</span>
+                    <button class="copy-button" onclick="copyToClipboard('trx-addr', this)">copy</button>
+                </div>
+            </div>
+        </div>
+        <div class="prompt-section">
+            <a class="return-link" href="index.html">← return home</a>
+        </div>
+
+        <div class="stats-container top-left">
+            <h2 class="section-title">last.fm activities</h2>
+            <div class="stats-counters">
+                <span id="total-scrobbles"><div class="loader-inline"></div> tracks</span>
+                <span id="total-artists"><div class="loader-inline"></div> artists</span>
+            </div>
+        </div>
+        <div class="footer-info">
+            <div id="datetime"></div>
+            <div id="birth-counter"></div>
+            <div id="death-counter"></div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
